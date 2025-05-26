@@ -9,13 +9,13 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Personal home page of Dr. Krishnarjun Krishnamoorthy"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Dr. Krishnarjun Krishnamoorthy"
-description              : &description "personal description"
+description              : &description "I am Dr. Krishnarjun Krishnamoorthy, a number theorist specializing in analytic and representation-theoretic aspects of modular forms."
 url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "krishnarjunk/krishnarjunk.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -23,24 +23,24 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  name             : "Krishnarjun"
+  pronouns         : # example: "He/Him"  
+  bio              : "I’m Dr. Krishnarjun Krishnamoorthy, a postdoctoral researcher at the Beijing Institute of Mathematical Sciences and Applications. My research focuses on analytic number theory, especially modular forms and divisor problems in number fields. When I’m not working on math, I enjoy music, trying out new cuisines, and snuggling up with a good book. I’m passionate about collaborating with other researchers and sharing knowledge across the global math community."
+  location         : "Beijing"
+  employer         : "Beijing Institute of Mathematical Sciences and Applications"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "krishnarjunmaths@gmail.com" 
 
   # Academic websites
-  academia         : # URL
+  academia         : "https://www.bimsa.cn/detail/krishna.html"
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=g2VHCC8AAAAJ"
   impactstory      : # URL
   orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
-  scopus           : # URL
+  scopus           : "https://www.scopus.com/authid/detail.uri?authorId=57226594834"
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
