@@ -1,10 +1,20 @@
 ---
-title: "On a Divisor Problem for Number Fields"
+title: "Generalized Divisor Problem for New Forms of Higher Level"
 collection: publications
-permalink: /publication/cmj-divisor/
-date: 2022-09-01
+permalink: /publication/generalized-divisor-problem/
+date: 2022-03-01
 venue: "Czechoslovak Mathematical Journal"
-paperurl: https://doi.org/10.21136/CMJ.2022.0042-21
+paperurl: https://doi.org/10.21136/CMJ.2021.0451-20
 category: manuscripts
-excerpt: "We generalize the classical Dirichlet divisor problem to certain settings over totally real number fields..."
+excerpt: "We study a generalized divisor problem associated with Hecke eigenforms of arbitrary level, establishing improved bounds for certain summatory functions."
 ---
+
+In this paper, we consider the sum
+\[
+\mathcal{S}_k(X) := \sum_{n < X} \sum_{n = n_1 n_2 \ldots n_k} \lambda_f(n_1) \lambda_f(n_2) \ldots \lambda_f(n_k),
+\]
+where \( f \) is a primitive Hecke eigenform or a Maass cusp form for \( \Gamma_0(N) \) with normalized eigenvalues \( \lambda_f(n) \), and \( X > 1 \) is a real number. We demonstrate that
+\[
+\mathcal{S}_k(X) \ll_{f,\varepsilon} X^{1 - \frac{3}{2(k + 3)} + \varepsilon}
+\]
+for every \( k \geq 1 \) and \( \varepsilon > 0 \). This generalizes previous results obtained for the full modular group and provides improved bounds over classical estimates by Landau for \( k \geq 5 \). As a corollary, we derive estimates on sums involving restricted coefficients of certain half-integral weight modular forms.
