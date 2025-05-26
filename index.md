@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Dr. Krishnarjun Krishnamoorthy"
+title: Home
 ---
 
 # Dr. Krishnarjun Krishnamoorthy
