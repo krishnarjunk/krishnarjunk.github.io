@@ -13,7 +13,7 @@ title                    : "Home"
 title_separator          : "-"
 name                     : &name "Dr. Krishnarjun Krishnamoorthy"
 description              : &description "I am Dr. Krishnarjun Krishnamoorthy, a number theorist specializing in analytic and representation-theoretic aspects of modular forms."
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url                      : # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "krishnarjunk/krishnarjunk.github.io"
 
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Krishnarjun"
   pronouns         : # example: "He/Him"  
-  bio              : "I’m Dr. Krishnarjun Krishnamoorthy, a postdoctoral researcher at the Beijing Institute of Mathematical Sciences and Applications. My research focuses on analytic number theory, especially modular forms and divisor problems in number fields. When I’m not working on math, I enjoy music, trying out new cuisines, and snuggling up with a good book. I’m passionate about collaborating with other researchers and sharing knowledge across the global math community."
+  bio              : "Number Theorists, Musician, Traveller"
   location         : "Beijing"
   employer         : "Beijing Institute of Mathematical Sciences and Applications"
   uri              : # URL
