@@ -13,8 +13,8 @@ title                    : "Home"
 title_separator          : "-"
 name                     : &name "Dr. Krishnarjun Krishnamoorthy"
 description              : &description "I am Dr. Krishnarjun Krishnamoorthy, a number theorist specializing in analytic and representation-theoretic aspects of modular forms."
-url                      : "https://krishnarjunk.github.io/krishnarjunk" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+url                      : "https://krishnarjunk.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+baseurl                  : ""
 repository               : "krishnarjunk/krishnarjunk.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
