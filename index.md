@@ -1,6 +1,5 @@
 ---
-layout: default
-title: Home
+title: Krishnarjun Krishnamoorthy
 --- 
 
 # Dr. Krishnarjun Krishnamoorthy
