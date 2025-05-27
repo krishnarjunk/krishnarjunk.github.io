@@ -18,6 +18,26 @@ layout: compress
 
     {{ content }}
 
+   {% if page.collection == "publications" and (page.arxivlink or page.paperlink) %}
+  <div style="margin-top: 2em; display: flex; flex-wrap: wrap; gap: 1em;">
+    {% if page.arxivlink %}
+      <a href="{{ page.arxivlink }}" target="_blank"
+         style="display: inline-flex; align-items: center; text-decoration: none; padding: 0.5em 1em; border: 1px solid #e0e0e0; border-radius: 5px; background: #f6f6f6;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/ArXiv_logo.png" alt="arXiv" style="height: 20px; margin-right: 8px;">
+        arXiv link
+      </a>
+    {% endif %}
+    {% if page.paperlink %}
+      <a href="{{ page.paperlink }}" target="_blank"
+         style="display: inline-flex; align-items: center; text-decoration: none; padding: 0.5em 1em; border: 1px solid #e0e0e0; border-radius: 5px; background: #f6f6f6;">
+        📄 Article link
+      </a>
+    {% endif %}
+  </div>
+{% endif %}
+
+
+
     <div class="page__footer">
       <footer>
         {% include footer/custom.html %}
