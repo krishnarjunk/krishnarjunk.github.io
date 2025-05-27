@@ -1,0 +1,18 @@
+---
+title: "On moments of non-normal number fields"
+collection: publications
+permalink: /publication/2023-jnt-moments/
+date: 2022-09-01
+venue: "Journal of number theory"
+authors: "Kalyan Chakraborty, Krishnarjun Krishnamoorthy"
+article_url: https://www.sciencedirect.com/science/article/abs/pii/S0022314X21003000
+arxiv_url: https://arxiv.org/abs/2104.04752
+category: manuscripts
+---
+
+	Let $ K $ be a number field over $ \mathbb{Q} $ and let $ a_K(m) $ denote the number of integral ideals of $ K $ of norm equal to $ m\in\mathbb{N} $. In this paper we obtain asymptotic formulae for sums of the form $ \sum_{m\leq X} a^l_K(m) $ thereby generalizing the previous works on the problem. 
+    Previously such asymptotics were known only in the case when $ K $ is Galois or when $K$ was a non normal cubic extension and $ l=2,3 $. The present work subsumes both these cases.
+
+
+{% include publication-links.html %}
+
