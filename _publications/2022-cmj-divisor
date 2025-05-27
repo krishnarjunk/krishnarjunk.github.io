@@ -1,12 +1,13 @@
 ---
 title: "Generalized Divisor Problem for New Forms of Higher Level"
 collection: publications
-permalink: /publication/generalized-divisor-problem/
+permalink: /publication/2022-cmj-divisor/
 date: 2022-03-01
 venue: "Czechoslovak Mathematical Journal"
-paperurl: https://doi.org/10.21136/CMJ.2021.0451-20
+authors: "Krishnarjun Krishnamoorthy"
+articlelink: https://link.springer.com/article/10.21136/CMJ.2021.0451-20
 category: manuscripts
-excerpt: "We study a generalized divisor problem associated with Hecke eigenforms of arbitrary level, establishing improved bounds for certain summatory functions."
+layout: post
 ---
 
 In this paper, we consider the sum
