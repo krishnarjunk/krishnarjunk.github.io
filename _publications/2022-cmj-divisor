@@ -20,7 +20,7 @@ where \( f \) is a primitive Hecke eigenform or a Maass cusp form for \( \Gamma_
 for every \( k \geq 1 \) and \( \varepsilon > 0 \). This generalizes previous results obtained for the full modular group and provides improved bounds over classical estimates by Landau for \( k \geq 5 \). As a corollary, we derive estimates on sums involving restricted coefficients of certain half-integral weight modular forms.
 
 
-{% if page.arxiv_url or page.article_url %}
+
 <div style="margin-top: 2em;">
   {% if page.arxiv_url %}
     <p>
@@ -29,6 +29,8 @@ for every \( k \geq 1 \) and \( \varepsilon > 0 \). This generalizes previous re
       </a>
     </p>
   {% endif %}
+
+
   {% if page.article_url %}
     <p>
       <a href="{{ page.article_url }}" target="_blank">
@@ -37,5 +39,3 @@ for every \( k \geq 1 \) and \( \varepsilon > 0 \). This generalizes previous re
     </p>
   {% endif %}
 </div>
-{% endif %}
-
