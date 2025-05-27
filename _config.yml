@@ -22,10 +22,10 @@ repository               : "krishnarjunk/krishnarjunk.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Profile pic.jpg"
   name             : "Krishnarjun"
   pronouns         : "He/Him"  
-  bio              : "Number Theorists, Musician, Traveller"
+  bio              : "Number Theorist, Musician, Traveller"
   location         : "Beijing"
   employer         : "Beijing Institute of Mathematical Sciences and Applications"
   uri              : # URL
