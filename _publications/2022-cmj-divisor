@@ -21,21 +21,5 @@ for every \( k \geq 1 \) and \( \varepsilon > 0 \). This generalizes previous re
 
 
 
-<div style="margin-top: 2em;">
-  {% if page.arxiv_url %}
-    <p>
-      <a href="{{ page.arxiv_url }}" target="_blank">
-        <i class="ai ai-arxiv" style="margin-right: 6px;"></i>arXiv link
-      </a>
-    </p>
-  {% endif %}
+{% include publication-links.html %}
 
-
-  {% if page.article_url %}
-    <p>
-      <a href="{{ page.article_url }}" target="_blank">
-        <i class="fas fa-external-link-alt" style="margin-right: 6px;"></i>Article link
-      </a>
-    </p>
-  {% endif %}
-</div>
