@@ -18,3 +18,12 @@ where \( f \) is a primitive Hecke eigenform or a Maass cusp form for \( \Gamma_
 \mathcal{S}_k(X) \ll_{f,\varepsilon} X^{1 - \frac{3}{2(k + 3)} + \varepsilon}
 \]
 for every \( k \geq 1 \) and \( \varepsilon > 0 \). This generalizes previous results obtained for the full modular group and provides improved bounds over classical estimates by Landau for \( k \geq 5 \). As a corollary, we derive estimates on sums involving restricted coefficients of certain half-integral weight modular forms.
+
+
+<div style="margin-top: 2em;">
+  <p>
+    <a href="https://link.springer.com/article/10.21136/CMJ.2021.0451-20" target="_blank">
+      <i class="fas fa-external-link-alt" style="margin-right: 6px;"></i>Article link
+    </a>
+  </p>
+</div>
