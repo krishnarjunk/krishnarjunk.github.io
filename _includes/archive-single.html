@@ -34,11 +34,37 @@
       {% endif %}
     </h2>
 
+    {% if post.authors or post.venue or post.date %}
+  <p class="publication-meta" style="font-size: 0.7em; color: #555; margin-top: -0.4em;">
     {% if post.authors %}
-      <p class="publication-authors" style="margin-top: -0.5em; font-size: 0.6em; color: #555;">
-        {{ post.authors }}
-      </p>
+      {{ post.authors }}
     {% endif %}
+    {% if post.venue %}
+      {% if post.authors %}, {% endif %}
+      <i>{{ post.venue }}</i>
+    {% endif %}
+    {% if post.date %}
+      {% if post.authors or post.venue %}, {% endif %}
+      {{ post.date | date: "%Y" }}
+    {% endif %}
+  </p>
+{% endif %}
+
+{% if post.arxiv_url or post.article_url %}
+  <p class="publication-links" style="font-size: 0.7em; margin-top: -0.5em;">
+    {% if post.arxiv_url %}
+      <a href="{{ post.arxiv_url }}" target="_blank" style="margin-right: 1em;">
+        <i class="fab fa-arxiv" aria-hidden="true"></i> arXiv link
+      </a>
+    {% endif %}
+    {% if post.article_url %}
+      <a href="{{ post.article_url }}" target="_blank">
+        <i class="fas fa-external-link-alt" aria-hidden="true"></i> Article link
+      </a>
+    {% endif %}
+  </p>
+{% endif %}
+
 
     
     {% if post.read_time %}
