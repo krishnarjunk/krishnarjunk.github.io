@@ -10,9 +10,8 @@ arxiv_url: https://arxiv.org/abs/2107.12123
 category: manuscripts
 ---
 
-Suppose that \( m\equiv 1\mod 4 \) is a prime and that \( n\equiv 3\mod 4 \) is a primitive root modulo \( m \). In this paper we obtain a relation between the class number of the imaginary quadratic field \( \mathbb{Q}(\sqrt{-nm}) \) and the digits of the base \( n \) expansion of \( 1/m ).
-	
-	Secondly, if \( m\equiv 3\mod 4 \), we study some convoluted sums involving the base \( n \) digits of \( 1/m \) and arrive at certain congruence relations involving the class number of \( \mathbb{Q}(\sqrt{-m}) \) modulo certain primes \( p \) which properly divide \( n+1 \).
+Suppose that \( m\equiv 1\mod 4 \) is a prime and that \( n\equiv 3\mod 4 \) is a primitive root modulo \( m \). In this paper we obtain a relation between the class number of the imaginary quadratic field \( \mathbb{Q}(\sqrt{-nm}) \) and the digits of the base \( n \) expansion of \( 1/m ). Secondly, if \( m\equiv 3\mod 4 \), we study some convoluted sums involving the base \( n \) digits of \( 1/m \) and arrive at certain congruence relations involving the class number of \( \mathbb{Q}(\sqrt{-m}) \) modulo certain primes \( p \) which properly divide \( n+1 \).
+
+
 
 {% include publication-links.html %}
-
