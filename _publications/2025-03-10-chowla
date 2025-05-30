@@ -1,0 +1,19 @@
+---
+title: "On variants of Chowla's conjecture"
+collection: publications
+permalink: /publication/2025-chowla/
+date: 2025-03-10
+venue: "Preprint"
+authors: "Krishnarjun Krishnamoorthy"
+#article_url: 
+arxiv_url: https://arxiv.org/abs/2501.10962
+category: manuscripts
+---
+
+	We study the shifted convolution sums associated to completely multiplicative functions taking values in $\{\pm 1\}$ and give combinatorical proofs of two recent results in the direction of Chowla's conjecture. We also determine the corresponding "spectrum".
+
+
+
+ 
+{% include publication-links.html %}
+
