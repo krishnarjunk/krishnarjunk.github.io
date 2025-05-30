@@ -14,7 +14,7 @@ category: manuscripts
 		$$
 		\sum_{m\leqslant T} a_K^l(m)
 		$$
-		as \(T\to\infty\). We also consider the moments of the corresponding Dedekind zeta-function. We prove lower bounds of expected order of magnitude and slightly improve the known upper bound for the second moment in the non-Galois case. This generalized my [previous work](/publication/2022-jnt-moments/).
+		as \(T\to\infty\). We also consider the moments of the corresponding Dedekind zeta-function. We prove lower bounds of expected order of magnitude and slightly improve the known upper bound for the second moment in the non-Galois case. This generalized my [previous work](https://krishnarjunk.github.io/publication/2022-jnt-moments/).
 
 
 {% include publication-links.html %}
