@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishnarjun Krishnamoorthy - Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            /* --- ADDED FOR CACHING AND BACKGROUND --- */
+        background-image: url('Background.png'); /* Use a static image file */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        /* --- END ADDED FOR CACHING --- */
+            color: #e2e8f0;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-heading {
+            @apply text-3xl md:text-4xl font-bold tracking-tight text-slate-200;
+        }
+        .glass-card {
+            background: rgba(23, 23, 23, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .nav-link {
+             @apply px-4 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-800 hover:text-white transition-colors duration-300;
+        }
+        /* --- Global link and hover styling --- */
+        a {
+          color: #004c99;  /* Deep blue link color */
+          text-decoration: none;
+          transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        
+        a:hover {
+          color: #d35400;  /* Warm amber/orange on hover */
+          text-shadow: 0 0 5px rgba(211, 84, 0, 0.3);
+          text-decoration: underline;
+        }
+        /* --- End of global link styling --- */
+
+    /* Modal styles */
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1000; 
+        left: 0; top: 0; width: 100%; height: 100%; 
+        background-color: rgba(0,0,0,0.5); 
+        justify-content: center; align-items: center;
+    }
+    .modal-content {
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        border-radius: 1rem;
+        max-width: 400px;
+        text-align: center;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    }
+    .close {
+        float: right;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #38bdf8;
+    }
+    .close:hover { color: #0ea5e9; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center glass-card rounded-b-lg">
+            <a href="#" class="text-xl font-bold gradient-text">Dr. Krishnarjun Krishnamoorthy, Ph. D.</a>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="teaching.html" class = "nav-link">Teaching</a>
+                <a href="blog.html" class = "nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="md:hidden flex justify-between items-center p-4 bg-gray-900">
+ 
+    
+    <!-- Hamburger button -->
+    <button id="mobile-menu-button" class="text-sky-400 focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+</div>
+
+<!-- Mobile menu links -->
+<div id="mobile-menu" class="hidden bg-gray-800 text-slate-100 flex flex-col space-y-2 p-4 md:hidden">
+        <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="teaching.html" class = "nav-link">Teaching</a>
+                <a href="blog.html" class = "nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+</div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+
+
+
+
+ 
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 text-center">
+            <!-- <h1 class="text-5xl md:text-7xl font-black text-slate-100 leading-tight">
+                    <span class="gradient-text">Contact me</span>
+                </h1> -->
+            
+                <div class="glass-card p-6 rounded-lg w-full transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10">
+             <p class="mt-4 text-xl md:text-2xl font-medium text-slate-300">
+                    If you are a master's or a bachelor's student and are interested in doing a project with me, please write to me with your ideas (make sure you write to me from your university email address so that I know you are not a robot). I'm always open to discussing new projects, research, or creative opportunities. Feel free to reach out.
+            </p>
+
+            <a id="contact-link" class="mt-8 inline-block bg-sky-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-sky-600 transition-transform duration-300 hover:scale-105 cursor-pointer">
+                Contact me
+            </a>
+
+            <!-- Modal -->
+            <div id="contact-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 class="text-2xl md:text-2xl font-black text-slate-100 leading-tight">
+                        Contact Information
+                    </h2>
+                    <p id="email-display"></p>
+                </div>
+            </div>
+            </div>
+
+            <!-- <div class="flex justify-center items-center space-x-6">
+                <a href="mailto:krishnarjunmaths@outlook.com" class="text-slate-400 hover:text-sky-400 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <span class="sr-only">Email</span>
+                </a> -->
+             <!--   <a href="#" class="text-slate-400 hover:text-sky-400 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            -->
+            <!--
+                <a href="#" class="text-slate-400 hover:text-sky-400 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span class="sr-only">GitHub</span>
+                </a>
+            -->
+            </div>
+        </section>
+    <script>
+    const modal = document.getElementById("contact-modal");
+    const link = document.getElementById("contact-link");
+    const closeBtn = document.querySelector(".close");
+    const emailDisplay = document.getElementById("email-display");
+
+    // Obfuscate email
+    const user = "<myfirstname>maths";
+    const domain = "gmail.com";
+    const email = user + "@" + domain;
+
+    link.onclick = () => {
+        emailDisplay.textContent = email;
+        modal.style.display = "flex";
+    };
+
+    closeBtn.onclick = () => {
+        modal.style.display = "none";
+    };
+
+    window.onclick = (event) => {
+        if(event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+
+    const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+</script>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800">
+        <div class="container mx-auto px-6 py-4 text-center text-slate-500">
+            <p>&copy; 2025 Krishnarjun Krishnamoorthy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

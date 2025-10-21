@@ -1,4 +1,0 @@
-1) Data Entry including papers, blogs etc
-2) layout styling and tweaks
-3) Information on the left hand side of home page
-4) Work on home page

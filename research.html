@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishnarjun Krishnamoorthy - Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+       <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+
+    <!-- KaTeX JS and auto-render -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "\\[", right: "\\]", display: true},
+                    {left: "\\(", right: "\\)", display: false}
+                ]
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            /* --- ADDED FOR CACHING AND BACKGROUND --- */
+        background-image: url('Background.png'); /* Use a static image file */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        /* --- END ADDED FOR CACHING --- */
+            color: #e2e8f0;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .abstract {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            /* Show only 3 lines of abstract before truncating */
+            -webkit-line-clamp: 5;
+        }
+        .section-heading {
+            @apply text-3xl md:text-4xl font-bold tracking-tight text-slate-200;
+        }
+        .glass-card {
+            background: rgba(29, 29, 31, 0.733);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(135, 84, 255, 0.493);
+        }
+        .nav-link {
+             @apply px-4 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-800 hover:text-white transition-colors duration-300;
+        }
+        /* --- Global link and hover styling --- */
+        a {
+          color: #004c99;  /* Deep blue link color */
+          text-decoration: none;
+          transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        
+        a:hover {
+          color: #d35400;  /* Warm amber/orange on hover */
+          text-shadow: 0 0 5px rgba(211, 84, 0, 0.3);
+          text-decoration: underline;
+        }
+        /* --- End of global link styling --- */
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center glass-card rounded-b-lg">
+            <a href="#" class="text-xl font-bold gradient-text">Dr. Krishnarjun Krishnamoorthy, Ph. D.</a>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="teaching.html" class = "nav-link">Teaching</a>
+                <a href="blog.html" class = "nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="md:hidden flex justify-between items-center p-4 bg-gray-900">
+ 
+    
+    <!-- Hamburger button -->
+    <button id="mobile-menu-button" class="text-sky-400 focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
+</div>
+
+<!-- Mobile menu links -->
+<div id="mobile-menu" class="hidden bg-gray-800 text-slate-100 flex flex-col space-y-2 p-4 md:hidden">
+        <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="teaching.html" class = "nav-link">Teaching</a>
+                <a href="blog.html" class = "nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+</div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+
+    <!-- Include Swiper CSS & JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<section id="research" class="py-24 flex flex-col items-center text-center">
+    <h1 class="text-5xl md:text-7xl font-black text-slate-100 leading-tight">
+        <span class="gradient-text">My Research</span>
+    </h1>
+
+    <p class="mt-4 text-l md:text-2xl font-medium text-slate-300 max-w-2xl">
+        You can find the summaries of my research articles below. If you want to get a list of my research articles, <a href="https://scholar.google.com/citations?user=g2VHCC8AAAAJ&hl=en&oi=sra" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sky-400 font-semibold hover:text-sky-300">click here</a>.
+    </p>
+
+    <br>
+
+    <!-- Swiper Container -->
+    <div class="swiper-container max-w-xl w-full h-[500px] relative">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide glass-card p-6 rounded-lg w-full transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10">
+                <h3 class="text-xl font-bold text-sky-400">Generalized divisor problem for newforms of higher level</h3>
+                <p class="text-slate-400 mt-2">Krishnarjun Krishnamoorthy; in Czechoslovak Mathematical Journal (CMJ)</p>
+                <p class="mt-4 text-slate-300 abstract">
+                    In this paper, we consider the sum
+                \[
+                \mathcal{S}_k(X) := \sum_{n < X} \sum_{n = n_1 n_2 \ldots n_k} \lambda_f(n_1) \lambda_f(n_2) \ldots \lambda_f(n_k),
+                \]
+            where \( f \) is a primitive Hecke eigenform or a Maass cusp form for \( \Gamma_0(N) \) with normalized eigenvalues \( \lambda_f(n) \), and \( X > 1 \) is a real number. We demonstrate that
+                \[
+                \mathcal{S}_k(X) \ll_{f,\varepsilon} X^{1 - \frac{3}{2(k + 3)} + \varepsilon}
+                \]
+            for every \( k \geq 1 \) and \( \varepsilon > 0 \). This generalizes previous results obtained for the full modular group and provides improved bounds over classical estimates by Landau for \( k \geq 5 \). As a corollary, we derive estimates on sums involving restricted coefficients of certain half-integral weight modular forms.
+                        </p>
+                        <a href="/personal_website/pubs/generalized_divisor_problem_cmj.html" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sky-400 font-semibold hover:text-sky-300">Read more</a>
+                </p>
+                <a href="https://link.springer.com/article/10.21136/CMJ.2021.0451-20" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sky-400 font-semibold hover:text-sky-300">Read the paper with the journal &rarr;</a>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide glass-card p-6 rounded-lg w-full transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10">
+                <h3 class="text-xl font-bold text-sky-400">On moments of non-normal number fields</h3>
+                <p class="text-slate-400 mt-2">Kalyan Chakraborty, Krishnarjun Krishnamoorthy; in Journal of number theory (JNT)</p>
+                <p class="mt-4 text-slate-300 abstract">
+                    Let \( K \) be a number field over \( \mathbb{Q} \) and let \( a_K(m) \) denote the number of integral ideals of \( K \) of norm equal to \( m\in\mathbb{N} \). 
+	In this paper we obtain asymptotic formulae for sums of the form \[ \sum_{m\leq X} a^l_K(m) \] thereby generalizing the previous works on the problem. 
+	Previously such asymptotics were known only in the case when \( K \) is Galois or when \( K \) was a non normal cubic extension and \( l=2,3 \). The present work subsumes both these cases.
+                        </p>
+                        <a href="/personal_website/pubs/moments_jnt.html" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sky-400 font-semibold hover:text-sky-300">Read more</a>
+                </p>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sky-400 font-semibold hover:text-sky-300">Read the paper with the journal &rarr;</a>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide glass-card p-6 rounded-lg w-full transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10">
+                <h3 class="text-xl font-bold text-sky-400">Moments of non-normal number fields II</h3>
+                <p class="text-slate-400 mt-2">Krishnarjun Krishnamoorthy. Monatshefte fur mathematik</p>
+                <p class="mt-4 text-slate-300">
+                    Suppose \(K\) is a number field and \(a_K(m)\) is the number of integral ideals of norm equal to \(m\) in \(K\), then for any integer \(l\), we asymptotically evaluate the sum
+		\[
+		\sum_{m\leqslant T} a_K^l(m)
+		\]
+		as \(T\to\infty\). We also consider the moments of the corresponding Dedekind zeta-function. We prove lower bounds of expected order of magnitude and slightly improve the known upper bound for the second moment in the non-Galois case.
+                </p>
+                <a href="/personal_website/pubs/moments_2_mofm.html" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sky-400 font-semibold hover:text-sky-300">Read the summary &rarr;</a>
+                <br>
+                <a href="https://link.springer.com/article/10.1007/s00605-024-02050-1" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sky-400 font-semibold hover:text-sky-300">Read the paper &rarr;</a>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-next text-sky-400"></div>
+        <div class="swiper-button-prev text-sky-400"></div>
+    </div>
+</section>
+
+<!-- Swiper JS Initialization -->
+<script>
+  const swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    slidesPerView: 1.2,          // Show main slide + partial next/prev
+    centeredSlides: true,        // Center the main slide
+    spaceBetween: 20,            // Gap between slides
+    loop: false,                 // Manual scrolling only
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+   const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+</script>
+
+<!-- Custom CSS for Blur/Gradient Effect -->
+<style>
+  /* Non-active slides: blur + gradient overlay */
+  .swiper-slide {
+    filter: blur(2px);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  /* Center slide: remove blur */
+  .swiper-slide-active {
+    filter: blur(0);
+    opacity: 1;
+    z-index: 10;
+  }
+
+  /* Gradient overlay on non-active slides */
+  .swiper-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.25));
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  /* Remove overlay on active slide */
+  .swiper-slide-active::before {
+    background: none;
+  }
+</style>
+
+      
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800">
+        <div class="container mx-auto px-6 py-4 text-center text-slate-500">
+            <p>&copy; 2025 Krishnarjun Krishnamoorthy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
